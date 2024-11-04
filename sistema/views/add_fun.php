@@ -28,7 +28,7 @@
     <main class="main-content">
         <div class="form-container">
             <h2>Adicionar Novo Funcionário</h2>
-            <form action="#">
+            <form action="#" >
                 <div class="input-group">
                     <label for="nome">Nome Completo:</label>
                     <input type="text" id="nome" placeholder="Ana Luiza Pereira dos Santos">
