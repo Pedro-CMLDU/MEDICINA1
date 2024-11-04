@@ -11,12 +11,12 @@
 <body class="corpo">
     <img class="img" src="../imagem/imagem1.png" />
     <main class="formulario">
-        <form class="formulario-campos" action="../src/controllers/auth_login.php" method="POST">
+        <form class="formulario-campos" action="../src/controller/auth_login.php" method="POST">
             <h1 class="titulo-form">BEM-VINDO</h1>
             <div class="form-input">
                 
                 <label for="email">E-mail:</label>
-                <input type="E-mail" name="email" id="E-mail" placeholder="Exemple@gmail.com">
+                <input type="text" name="email" id="E-mail" placeholder="Exemple@gmail.com">
             </div>
 
             <div class="form-input">
