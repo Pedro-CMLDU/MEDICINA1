@@ -167,6 +167,10 @@ body {
     margin-right: 5px;
 }
 
+.link-add {
+    margin-left: 85%;
+}
+
 
 @media screen and (max-width: 800px) {
 

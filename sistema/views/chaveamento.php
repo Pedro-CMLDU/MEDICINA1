@@ -19,8 +19,8 @@
     </div>
 
     <nav class="navegacao">
-        <a href="index_menu.php">Início</a> &gt;
-        <a href="fucionario.php">Voltar</a>
+        <a href="index_menu.php">Início</a>
+        <a  class="link-add" href="adicionar_chave.php">Acrescentar chaves</a>
     </nav>
 
     <section class="blocomeio">
