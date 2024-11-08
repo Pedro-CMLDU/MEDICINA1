@@ -12,6 +12,21 @@ body {
     margin-left: 2%;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+}
+
+.navegacao-esquerda{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.navegacao-direita{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .navegacao a {
@@ -139,6 +154,19 @@ body {
     margin-top: 110px;
 
 }
+.nova_chave{
+    margin-top: 0;
+    margin-left: 92%;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+  
+}
+.nova_chave a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 5px;
+}
+
 
 @media screen and (max-width: 800px) {
 
@@ -169,4 +197,19 @@ body {
             width: 97%;
             
         }
+        .img_senac_logo{
+            margin-right: 9%;
+            width: 55px;
+            height: 35px;
+            margin-top: 12px;
+         }
+         .keybox{
+            margin: auto;
+            width: 1000%;
+            right: 80%;
+            display: flex;
+            justify-content: center;
+            
+        }
+        
 }

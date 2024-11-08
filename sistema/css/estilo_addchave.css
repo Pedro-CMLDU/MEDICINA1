@@ -108,7 +108,7 @@ button:hover {
 
 @media screen and (max-width:414px) {
     .form-container{
-        margin-top: 20% ;
+        margin-top: 13% ;
         width: 90%;
         height: 65vh;
         
@@ -165,7 +165,7 @@ button:hover {
 .breadcrumb {
     font-size: 14px;
     text-align: left;
-    margin-top: 15%;
+    margin-top: 20%;
 }
 
 .breadcrumb a {
@@ -173,6 +173,20 @@ button:hover {
     color: #333;
 }
 .container{
+ 
+}
+.img_senac_logo{
+    margin-right: 9%;
+    width: 55px;
+    height: 35px;
+    margin-top: 12px;
+ }
+ .keybox{
+    margin: auto;
+    width: 1000%;
+    right: 80%;
+    display: flex;
+    justify-content: center;
     
 }
 }

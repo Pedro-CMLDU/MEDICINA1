@@ -145,6 +145,12 @@ body {
     background-color: #1f2d59;
 }
 
+.botao-link {
+    margin-left: 80%;
+    color: white;
+}
+
+
 @media screen and (max-width: 414px){
     .header .logo {
         width: 100%;
@@ -156,6 +162,21 @@ body {
         margin-top: 15%;
         margin-left: 5%;
         font-size: 14px;
+    }
+
+    .img_senac_logo{
+        margin-right: 9%;
+        width: 55px;
+        height: 35px;
+        margin-top: 12px;
+     }
+     .keybox{
+        margin: auto;
+        width: 1000%;
+        right: 80%;
+        display: flex;
+        justify-content: center;
+        
     }
     
 

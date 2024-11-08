@@ -33,7 +33,7 @@
                 <input class="retangulo" type="password" placeholder="Ex: ***" name="senha">
             </div>
         </div>
-        <button class="button">ENTRAR</button>
+        <button class="button" type="submit">ENTRAR</button>
     </form>
     
     <img class="img" src="../imagem/image 7.png" alt="Logo Senac">

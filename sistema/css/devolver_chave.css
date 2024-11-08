@@ -18,25 +18,23 @@ body {
 
 /* Container geral */
 .container {
-    
     display:flex;
     flex-direction: column;
     padding: 2%;
-
+    
 }
 
 /* Breadcrumb de navegação */
 .breadcrumb {
+    margin-top: 7%;
+    margin-left: 2%;
     font-size: 14px;
-    margin-bottom: 20px;
-    text-align: left;
-    padding: 3%;
 }
 
 .breadcrumb a {
     text-decoration: none;
     color: #333;
-    margin-top: 12px;
+    margin-top: 8px;
     left: 50%;
     
 }
@@ -145,6 +143,7 @@ button:hover {
 .formulario{
   display: flex;
   flex-direction: column;
+  margin-top: 0;
 }
 .form-inputs{
   display: flex;
@@ -182,7 +181,7 @@ button:hover {
 
 @media screen and (max-width:414px) {
     .form-container{
-        margin-top: 20% ;
+        margin-top: 7% ;
         width: 90%;
         height: 65vh;
         
@@ -227,9 +226,6 @@ button:hover {
         width: 49px;
         height: 28px;
         align-self: center;
-
-
-    
     }
     .centralizado{
         font-size: 25px;
@@ -244,8 +240,37 @@ button:hover {
    }
    .form-botoes{
     justify-content: flex-start;
-    margin-left: 5%;
-   }
-   
+    margin-left: 1%;
+    
 
+   }
+   .breadcrumb {
+    margin-top: 25%;
+    margin-left: 7%;
+    font-size: 14px;
+}
+
+.img_senac_logo{
+    margin-right: 9%;
+    width: 55px;
+    height: 35px;
+    margin-top: 12px;
+ }
+ .keybox{
+    margin: auto;
+    width: 1000%;
+    right: 80%;
+    display: flex;
+    justify-content: center;
+    
+}
+.butao{
+        justify-content: flex-start;
+        margin-left: 3%;  
+        width: 21%;
+}
+
+.container{
+    padding: 0%;
+}
 }

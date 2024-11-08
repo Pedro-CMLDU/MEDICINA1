@@ -21,48 +21,45 @@
     </header>
     
     <nav class="breadcrumb">
-        <a href="index_menu.php">Início</a> >
+        <a href="index_menu.php">Início</a>
         <a href="fucionario.php">Voltar</a>
+        <a class="botao-link" href="tipo_func.php">Cadastrar cargo</a>
+
     </nav>
     
     <main class="main-content">
         <div class="form-container">
             <h2>Adicionar Novo Funcionário</h2>
-            <form action="#" >
+            <form action="../src/controller/add_funcionario_cadastro.php" method="POST" >
                 <div class="input-group">
                     <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" placeholder="Ana Luiza Pereira dos Santos">
+                    <input type="text" id="nome" placeholder="Ana Luiza Pereira dos Santos" name="nome">
                 </div>
                 
                 <div class="input-group">
                     <label for="cargo">Cargo:</label>
-                    <select id="cargo" class="input-group-select">
-                        <option value="">Selecione</option>
-                        <option value="">Professor (a)</option>
-                        <option value=""> Assist. de Limpeza </option>
-                        <option value="">Gerente</option>
+                    <select id="cargo" class="input-group-select" name="cargo">
+                        <option value="#"  disabled selected>Selecione</option>
+                        <?php 
+                            require_once('../config/dbConnect.php');
+                            $sqlCargos = "SELECT codigo, tip_func FROM tipo_funcionario";
+                            $resultado = $dbh->query($sqlCargos);
+                            $listaCargos = $resultado->fetchAll(PDO::FETCH_ASSOC);
+
+                            if(count($listaCargos) > 0):
+                                foreach($listaCargos as $cargos):
+                        ?>
+
+                            <option value="<?= $cargos['codigo'] ?>"> <?= $cargos['tip_func'] ?> </option>
+                        <?php
+                            endforeach;
+                        endif;
+                    ?>
                     </select>
                 </div>
-        
-
-                <div class="input-group">
-                    <label>Tipo de Funcionário:</label>
-                    <div class="radio-group">
-                        <div class="radio-group-div">
-                            <label> Comum</label>
-                            <input type="radio" name="tipo" value="comum">
-                        </div>
-                       <div class="radio-group-div">
-                            <label>Gerente</label>
-                            <input type="radio" name="tipo" value="gerente"> 
-                       </div>
-                        
-                    </div>
-                </div>
-
                 <div class="input-group">
                     <label for="contato">Contato:</label>
-                    <input type="tel" id="contato" placeholder="(87) 96734-8403">
+                    <input type="tel" id="contato" placeholder="(87) 96734-8403" name="telefone">
                 </div>
                 
                 <button type="submit" class="submit-button">Adicionar Funcionário</button>

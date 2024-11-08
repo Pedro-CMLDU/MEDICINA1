@@ -7,17 +7,15 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     $email = filter_input(INPUT_POST, 'email');
     $telefone = filter_input(INPUT_POST, 'telefone');
     $senha = filter_input(INPUT_POST, 'senha');
-    $cargo = "Porteiro";
 
 
     $senha = password_hash($senha, PASSWORD_ARGON2ID);
 
-    $insertProf = "INSERT INTO func VALUES(null, :nome, :cargo, :contato, :cod_tip_func, :email, :senha)";
+    $insertProf = "INSERT INTO func VALUES(null, :nome, :contato, :cod_tip_func, :email, :senha)";
     $req = $dbh->prepare($insertProf);
     $req->bindValue(':nome', $nome);
-    $req->bindValue(':cargo', $cargo);
     $req->bindValue(':contato', $telefone);
-    $req->bindValue(':cod_tip_func', 5);
+    $req->bindValue(':cod_tip_func', 1);
     $req->bindValue(':email', $email);
     $req->bindValue(':senha', $senha);
     if($req->execute()){
