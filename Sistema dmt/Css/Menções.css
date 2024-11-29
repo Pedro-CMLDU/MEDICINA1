@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+ }
+ 
+ body {
+    background: linear-gradient(to bottom, #6a27ab, #1e90ff); /* Gradiente azul escuro para azul vibrante */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+ }
+ 
+ .background-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Sobreposição transparente */
+    z-index: 1;
+ }
+ 
+ .turmas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+ }
+
+.div-img{
+   width: 65%;
+   display: flex;
+   justify-content: flex-end;
+   position: absolute;
+   z-index: 1;
+   margin-bottom: 10%;
+   top: -9%;
+ }
+ .baner{
+   width: 10%;
+   height: 10%;
+}
+ .turmas-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    height: 70vh;
+    margin: bottom 20%; 
+    text-align: center; /* Centraliza os campos de entrada */
+ }
+ 
+ h1 {
+    margin-bottom: 30px;
+    color: #6927ab;
+    font-size: 45px;
+    opacity: 80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .aluno{
+   display: flex;
+   flex-direction: row;
+   gap: 1%;
+ }
+ .aluno-0{
+   font-weight: medium;
+   font-size: 21px;
+
+ }
+ .aluno-1{
+  color: #000000;
+  opacity: 56%;
+  font-size: 21px;
+ }
+ .av1{
+   background-color: #EDEDED;
+   width: 15%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 8vh;
+   margin-top: 2%;
+ }
+ .sem-margin-mencoes{
+   display: flex;
+   flex-direction: column;
+   margin-left: 0;
+ }
+.linhas-av{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin-top: 2%;
+   margin-left: 3vw;
+   gap: 8px;
+
+ }
+ .div-select-dar-nota-noa{
+  background-color: #EDEDED;
+   width: 15%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 8vh;
+   margin-top: 2.7%;
+ }
+ .linha-1{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   gap: 5%;
+   height: 10vh;
+ }
+ .selects-notas{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   gap: 10%;
+ }
+.div-select-dar-nota{
+   width: 15%;
+
+}
+.div-select-dar-mencao{
+  width: 12%;
+  margin-left: 0;
+
+}
+ .dar-nota{
+   background-color: #EDEDED;
+   border-radius: 3px;
+   border: none;
+   text-align: center;
+   color: white;
+   width: 100%;
+   height: 8vh;
+   color: #6a27ab;
+   font-weight: 600;
+
+ }
+ .trimestres{ 
+   background-color: #583499;
+   width: 90%;
+   height: 3.5vh;
+   border-radius: 7px;
+   border: none;
+   text-align: center;
+   color: white;
+   margin-left: 0;
+   font-size: 1.2rem;
+ }
+ 
+ .div_botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8%;
+    height: 50vh; /* Mantém os campos centralizados */
+ }
+
+
+ .formulario-mencao{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+ }
+ .formulario-itens{
+   width: 100%;
+   height: 90vh;
+   display: flex;
+   flex-direction: column;
+   gap: 10%;
+ }
+ @media screen and (max-width: 416px){
+  h1 {
+    margin-bottom: 30px;
+    color: #6927ab;
+    font-size: 30px;
+    opacity: 80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .aluno{
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+}
+.aluno-0{
+  font-weight: medium;
+  font-size: 17px;
+
+}
+.aluno-1{
+ color: #000000;
+ opacity: 56%;
+ font-size: 17px;
+}
+ .turmas-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 75%;
+  height: 80vh;
+  margin: bottom 20%; 
+  text-align: center; /* Centraliza os campos de entrada */
+}
+   .div-img{
+      width: 65%;
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      z-index: 1;
+      margin-bottom: 10%;
+      top: -9%;
+    }
+    .baner{
+      width: 25%;
+      height: 25%;}
+
+      .linhas-av{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 3vw;
+     
+      }
+      .av1{
+        background-color: #EDEDED;
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        margin-top: 2%;
+      }
+
+      .dar-nota{
+        background-color: #EDEDED;
+        border-radius: 3px;
+        border: none;
+        text-align: center;
+        color: white;
+        width: 100%;
+        height: 8vh;
+        color: #6a27ab;
+        font-weight: 600;
+        
+     
+      }
+
+      .div-select-dar-nota{
+        width: 20%;
+     
+     }
+
+      
+
+ }

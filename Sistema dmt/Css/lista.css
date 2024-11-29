@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+ }
+ 
+ body {
+    background: linear-gradient(to bottom, #6a27ab, #1e90ff); /* Gradiente azul escuro para azul vibrante */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+ }
+ 
+ .menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+ }
+ 
+ .div-img{
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 10%;
+    top: 8%;
+  }
+ 
+ .menu-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    height: 70vh;
+    text-align: center;
+ }
+ 
+ .titulo-lista {
+    background-color: #6a27ab;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: default;
+ }
+ 
+ .lista-alunos {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    text-align: left; 
+ }
+ 
+ .lista-alunos li {
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-top: 5px;
+    border-radius: 5px;
+ }
+ 
+ .seta-indicadora {
+    font-size: 20px;
+    color: #6a27ab;
+    margin-top: 1px;
+    cursor: default;
+    
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
