@@ -1,6 +1,6 @@
 <?php
 $user = "root"; //variavel em PHP usa $
-$pass = "Samuel@0";
+$pass = "legosonic2";
 try {
     $dbh = new PDO('mysql:host=localhost;dbname=senac', $user, $pass);
     echo "Conexão estabelecida!";

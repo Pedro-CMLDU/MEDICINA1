@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 /* Reset básico para margem e fonte */
-*{
+* {
     font-family: "Lexend";
 }
 
@@ -16,15 +16,21 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    width: 20vh; /* Ajuste a largura conforme necessário */
-    background-color: #f5f5f5; /* Cor de fundo da barra lateral */
-    border-left: 30px solid orange; /* Borda laranja à direita */
+    width: 20vh;
+    /* Ajuste a largura conforme necessário */
+    background-color: #f5f5f5;
+    /* Cor de fundo da barra lateral */
+    border-left: 30px solid orange;
+    /* Borda laranja à direita */
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px; /* Espaço no topo */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra opcional para destacar a barra lateral */
-    z-index: 1; /* Garante que a barra lateral fique atrás do conteúdo principal */
+    padding-top: 20px;
+    /* Espaço no topo */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    /* Sombra opcional para destacar a barra lateral */
+    z-index: 1;
+    /* Garante que a barra lateral fique atrás do conteúdo principal */
     box-sizing: border-box;
 }
 
@@ -35,13 +41,18 @@ body {
     top: 0;
     left: 0;
     height: 12%;
-    width: 100%; /* Ajuste a largura conforme necessário */
-    background-color: #003282; /* Cor de fundo da barra lateral */
+    width: 100%;
+    /* Ajuste a largura conforme necessário */
+    background-color: #003282;
+    /* Cor de fundo da barra lateral */
     display: flex;
-    padding-top: none; /* Espaço no topo */
+    padding-top: none;
+    /* Espaço no topo */
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
-    z-index: 1; /* Garante que a barra lateral fique atrás do conteúdo principal */
+    z-index: 1;
+    /* Garante que a barra lateral fique atrás do conteúdo principal */
 }
+
 .downbar {
     position: fixed;
     display: flex;
@@ -49,15 +60,19 @@ body {
     top: 93%;
     left: 0;
     height: 12%;
-    width: 100%; /* Ajuste a largura conforme necessário */
-    background-color: #003282; /* Cor de fundo da barra lateral */
+    width: 100%;
+    /* Ajuste a largura conforme necessário */
+    background-color: #003282;
+    /* Cor de fundo da barra lateral */
     display: flex;
-    padding-top: none; /* Espaço no topo */
+    padding-top: none;
+    /* Espaço no topo */
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
-    z-index: 1; /* Garante que a barra lateral fique atrás do conteúdo principal */
+    z-index: 1;
+    /* Garante que a barra lateral fique atrás do conteúdo principal */
 }
 
-.img-senac{
+.img-senac {
     display: flex;
     flex-direction: column;
     margin-left: 14.4%;
@@ -69,67 +84,87 @@ body {
 /* Estilo dos links na barra lateral */
 .side_items a {
     display: block;
-    margin: 3.6vh; /* Espaço vertical entre os ícones */
-    color: #003282; /* Cor do ícone */
-    text-decoration: none; /* Remove o sublinhado */
-    font-size: 5vh; /* Tamanho dos ícones */
-    text-align: center; /* Alinha o texto ao centro */
-    transition: color 0.3s; /* Transição suave para a cor ao passar o mouse */
+    margin: 3.6vh;
+    /* Espaço vertical entre os ícones */
+    color: #003282;
+    /* Cor do ícone */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    font-size: 5vh;
+    /* Tamanho dos ícones */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    transition: color 0.3s;
+    /* Transição suave para a cor ao passar o mouse */
 }
 
 .side_items a span {
     display: block;
-    margin-top: 8px; /* Espaço entre o ícone e o texto */
-    font-size: 14px; /* Tamanho do texto */
-    color: #003282; /* Cor do texto */
-    
+    margin-top: 8px;
+    /* Espaço entre o ícone e o texto */
+    font-size: 14px;
+    /* Tamanho do texto */
+    color: #003282;
+    /* Cor do texto */
+
 }
 
 /* Estilo dos ícones ao passar o mouse */
 .side_items a:hover {
-    color: orange; /* Cor do ícone ao passar o mouse */
+    color: orange;
+    /* Cor do ícone ao passar o mouse */
 }
 
 .side_items a:hover span {
-    color: orange; /* Cor do texto ao passar o mouse */
+    color: orange;
+    /* Cor do texto ao passar o mouse */
 }
 
 /* Divisórias entre os ícones */
 .side_items hr {
     width: 100%;
     border: 0;
-    border-top: 1px solid #ddd; /* Cor e espessura da divisória */
-    margin: 20px 0; /* Espaço vertical ao redor da divisória */
+    border-top: 1px solid #ddd;
+    /* Cor e espessura da divisória */
+    margin: 20px 0;
+    /* Espaço vertical ao redor da divisória */
 }
 
 .quadrado-p {
-    position: relative; /* Necessário para posicionar o botão dentro do quadrado-p */
+    position: relative;
+    /* Necessário para posicionar o botão dentro do quadrado-p */
 }
 
 /* Estilo do conteúdo principal */
 main {
-    margin-left: 200px; /* Ajusta a margem esquerda para evitar sobreposição com a barra lateral */
-    padding: 20px; /* Espaçamento interno do conteúdo principal */
+    margin-left: 200px;
+    /* Ajusta a margem esquerda para evitar sobreposição com a barra lateral */
+    padding: 20px;
+    /* Espaçamento interno do conteúdo principal */
 }
-.menu_sand{
+
+.menu_sand {
     display: none;
 }
 
 .voltar {
+    display: block;
     text-decoration: none;
     color: #003282;
 }
 
-@media screen and (max-width: 800px){
-    body{
+@media screen and (max-width: 800px) {
+    body {
         line-height: 1.2em;
         overflow: hidden;
     }
-    .side_items{
+
+    .side_items {
         flex-direction: column;
         display: none;
     }
-    .menu_sand{
+
+    .menu_sand {
         display: initial;
         cursor: pointer;
         width: 32px;
@@ -137,48 +172,59 @@ main {
         margin-top: 140px;
         margin-left: 30px;
     }
-    .sidebar_exibir{
+
+    .sidebar_exibir {
         display: flex !important;
     }
-    .img-senac{
+
+    .img-senac {
         margin-left: 9%;
         margin-top: 3.5%;
         width: 21vw;
         height: 7vh;
     }
-    .info{
+
+    .info {
         display: flex;
         font-size: 10px;
         margin-top: -80%;
         margin-right: 10%;
         text-align: center;
     }
-    .ocupacao-info-titulo{
+
+    .ocupacao-info-titulo {
         display: flex;
         font-size: 20px;
         width: 100%;
     }
-    .navegacao{
+
+    .navegacao {
         display: flex;
         margin-left: 60%;
         margin-top: 22%;
         width: 100%;
     }
-    .user-info{
+
+    .user-info {
         position: absolute;
         width: 100%;
     }
 
-    .user-info-container{ 
+    .user-info-container {
         display: flex;
     }
-    .ocupacao-info-home, .perfil {
+
+    .ocupacao-info-home,
+    .perfil {
         display: none;
     }
-    .profile-pic-moon, material-symbols-outlined{
+
+    .profile-pic-moon,
+    material-symbols-outlined {
         display: none;
-    } 
-    .dados-usuario{
+    }
+
+    .dados-usuario {
         display: flex;
         width: 50vw;
         font-size: 11px;
@@ -187,82 +233,101 @@ main {
         line-height: 0.6cm;
         font-weight: 700;
     }
-    .dados-usuario h2{
+
+    .dados-usuario h2 {
         font-size: 15px;
         width: 50vw;
     }
+
     .dados-usuario .a {
         color: blue;
         text-decoration: none;
     }
-    .profile-pic-perfil .initials{
+
+    .profile-pic-perfil .initials {
         margin-top: 1%;
         padding: 40%;
     }
-    .fa-solid.fa-camera{
+
+    .fa-solid.fa-camera {
         margin-left: 3%;
     }
-    .quadrado .profile-pic-perfil{
+
+    .quadrado .profile-pic-perfil {
         width: 140%;
     }
+
     .profile-pic-perfil {
         margin-top: 500%;
         margin-left: 180px;
         align-self: center;
     }
-    .user-details .nome{
+
+    .user-details .nome {
         margin-top: -20%;
     }
-    .user-details .tipo-user{
+
+    .user-details .tipo-user {
         margin-top: -20%;
     }
-    .user-details{
+
+    .user-details {
         font-size: 70%;
         margin-left: 90%;
-        align-items:center;
+        align-items: center;
         display: flex;
-        flex-direction:column;
-        text-align:center;
+        flex-direction: column;
+        text-align: center;
         width: 100%;
     }
-    .quadrado{
+
+    .quadrado {
         height: 1vh;
         width: 100%;
         display: flex;
     }
-    .mobile{
+
+    .mobile {
         display: initial !important;
         margin-top: 38%;
         margin-left: 60%;
     }
-    .sair{
+
+    .sair {
         display: none;
     }
-    .user-details .fa-arrow-right-from-bracket{
+
+    .user-details .fa-arrow-right-from-bracket {
         display: none;
     }
-    .mobile .fa-arrow-right-from-bracket{
+
+    .mobile .fa-arrow-right-from-bracket {
         display: flex;
         margin-left: 120%;
         margin-top: -55%;
         gap: 60%;
     }
-    .user-details .ab .fa-arrow-right-from-bracket{
+
+    .user-details .ab .fa-arrow-right-from-bracket {
         padding: 50%;
     }
-    .initials{
+
+    .initials {
         font-size: 60%;
     }
 
 }
 
-.mobile{
+.mobile {
     display: none;
 }
-.mobile, h4{
+
+.mobile,
+h4 {
     color: #050C9C;
-    flex-direction:column-reverse;
+    flex-direction: column-reverse;
 }
+
 .user-info {
     display: flex;
     flex-direction: row;
@@ -273,7 +338,7 @@ main {
 
 }
 
-.quadrado{
+.quadrado {
     width: 30%;
     background-color: #dcefff;
     border-radius: 5vh;
@@ -282,21 +347,24 @@ main {
     justify-content: center;
     flex-direction: column;
 }
+
 /* Estilo da área de informações do usuário */
 
-.dados-usuario{
+.dados-usuario {
     width: 30%;
     height: 60vh;
     display: flex;
     flex-direction: column;
-   
+
 }
-.dados-usuario h2{
+
+.dados-usuario h2 {
     color: #3572EF;
     font-weight: 300;
     margin-top: 0px;
 }
-.dados-usuario p{
+
+.dados-usuario p {
     margin-top: -20px;
     margin-bottom: 20px;
 }
@@ -313,8 +381,10 @@ main {
     font-size: 72px;
     color: white;
     position: relative;
-    margin-bottom: 20px; /* Espaço entre o avatar e as informações */
+    margin-bottom: 20px;
+    /* Espaço entre o avatar e as informações */
 }
+
 .profile-pic-moon {
     border: solid black 2px;
     box-shadow: 0px 2px rgba(0, 0, 0, 0.164);
@@ -363,43 +433,50 @@ main {
 .user-details {
     text-align: center;
 }
-.user-details h1{
+
+.user-details h1 {
     margin-bottom: 0;
     font-size: 20px;
     font-weight: 300;
 }
-.user-details h3{
+
+.user-details h3 {
     margin-top: 0;
     font-size: 16px;
-    font-weight:300;
+    font-weight: 300;
     color: #9A9A9A;
 }
 
 .user-details strong {
     color: #3572EF;
 }
-.user-details i{
+
+.user-details i {
     color: #050C9C;
 
     margin-left: 80%;
     margin-top: 29%;
 }
-.user-details h4{
+
+.user-details h4 {
     position: fixed;
     color: #050C9C;
     margin-left: 16%;
     margin-top: 6%;
 
 }
+
 .change-password {
     color: #050C9C;
     text-decoration: underline;
     cursor: pointer;
 }
-.password{
+
+.password {
     margin-bottom: 1px;
 }
-.informações{
+
+.informações {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -408,20 +485,23 @@ main {
     margin-left: 10%;
     gap: 5%;
 }
-.info{
+
+.info {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     margin-left: 5%;
 }
-.navegacao{
+
+.navegacao {
     display: flex;
     flex-direction: row;
     width: 100%;
     margin-bottom: 3%;
 }
-.ocupacao-info-home{
+
+.ocupacao-info-home {
     font-weight: 350;
     margin-top: 2%;
     color: #3572EF;
@@ -430,18 +510,20 @@ main {
     margin-left: 5%;
 }
 
-.ocupacao-info-home:hover, .perfil:hover{
+.ocupacao-info-home:hover,
+.perfil:hover {
     text-decoration: underline;
 }
 
-.perfil{
+.perfil {
     font-weight: 350;
     color: #9A9A9A;
     margin-top: 2%;
     font-size: 12px;
     text-decoration: none;
 }
-.user-info-container{
+
+.user-info-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -449,18 +531,20 @@ main {
     margin-top: 12vh;
     gap: 2%;
 }
-.ocupacao-info-titulo{
+
+.ocupacao-info-titulo {
     margin-top: 2vw;
     font-weight: 450;
     width: 100%;
     text-decoration: underline;
     margin-left: 2%;
 }
-.initials{
+
+.initials {
     font-weight: 10;
 }
 
-.material-symbols-outlined{
+.material-symbols-outlined {
     margin-left: 25%;
     margin-top: 25%;
 }

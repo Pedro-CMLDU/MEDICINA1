@@ -74,10 +74,11 @@
                 <div class="user-details">
                     <h1 class="nome"><?= $resultados_infos['nome'] ?></h1>
                     <h3 class="tipo-user"><?= $resultados_infos['descr'] ?></h3>
-                    <h4 class="sair">Sair
-                        <a class="voltar" href="login.php"></a>
+                    <a class="voltar" href="login.php">
+                        <h4 class="sair">Sair</h4>
+                    </a>
                     </h3>
-                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 </div>
             </div>
 
@@ -102,14 +103,10 @@
                 <a class="change-password" href="trocar-senha.html">Trocar de senha</a>
             </div>
             <div class="mobile">
-                <h4 class="sair-mobile">Sair <i class=" fa-solid fa-arrow-right-from-bracket"></i></h4>
+                <a class="voltar" href="login.php">Sair</a>
+                <i class=" fa-solid fa-arrow-right-from-bracket"></i>
             </div>
-            </i>
-            </i>
         </div>
-    </div>
-    </div>
-    </div>
     </div>
 
 
