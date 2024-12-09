@@ -12,7 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     overflow: hidden;
  }
  
@@ -23,79 +22,42 @@
     background: rgba(255, 255, 255, 0.1); /* Sobreposição transparente */
     z-index: 1;
  }
- 
+ .turmas-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 75%;
+  height: 80vh;
+  margin: 5% 10%; 
+  text-align: center;
+  }
  .turmas-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: relative;
     z-index: 2;
     width: 100%;
+    margin-top: 5%;
  }
+ .div-img{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  z-index: 1;
+  margin-bottom: 10%;
+  top: -9%;
+  }
+  .baner{
+  width: 10%;
+  height: 10%;
+  margin-top: 5%;
+  margin-right: 10%;
 
-.div-img{
-   width: 65%;
-   display: flex;
-   justify-content: flex-end;
-   position: absolute;
-   z-index: 1;
-   margin-bottom: 10%;
-   top: -9%;
- }
- .baner{
-   width: 10%;
-   height: 10%;
-}
- .turmas-box {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 60%;
-    height: 70vh;
-    margin: bottom 20%; 
-    text-align: center; /* Centraliza os campos de entrada */
- }
- 
- h1 {
-    margin-bottom: 30px;
-    color: #6927ab;
-    font-size: 45px;
-    opacity: 80%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
- }
-
- .aluno{
-   display: flex;
-   flex-direction: row;
-   gap: 1%;
- }
- .aluno-0{
-   font-weight: medium;
-   font-size: 21px;
-
- }
- .aluno-1{
-  color: #000000;
-  opacity: 56%;
-  font-size: 21px;
- }
- .av1{
-   background-color: #EDEDED;
-   width: 15%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 8vh;
-   margin-top: 2%;
- }
- .sem-margin-mencoes{
-   display: flex;
-   flex-direction: column;
-   margin-left: 0;
- }
+  }
 .linhas-av{
    display: flex;
    flex-direction: column;
@@ -103,23 +65,17 @@
    margin-top: 2%;
    margin-left: 3vw;
    gap: 8px;
+  justify-content: center;
+}
 
- }
- .div-select-dar-nota-noa{
-  background-color: #EDEDED;
-   width: 15%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 8vh;
-   margin-top: 2.7%;
- }
  .linha-1{
    display: flex;
    flex-direction: row;
    width: 100%;
-   gap: 5%;
+   gap: 3vw;
    height: 10vh;
+   justify-content: center;
+    
  }
  .selects-notas{
    display: flex;
@@ -150,7 +106,7 @@
  }
  .trimestres{ 
    background-color: #583499;
-   width: 90%;
+   width:100%;
    height: 3.5vh;
    border-radius: 7px;
    border: none;
@@ -172,100 +128,163 @@
  .formulario-mencao{
    display: flex;
    flex-direction: column;
-   width: 100%;
+   width: 50%;
+   justify-content: center;
+   margin-top: 5%;
+   margin: 5% auto;
  }
  .formulario-itens{
    width: 100%;
    height: 90vh;
    display: flex;
    flex-direction: column;
-   gap: 10%;
+   gap: 14%;
  }
- @media screen and (max-width: 416px){
-  h1 {
-    margin-bottom: 30px;
-    color: #6927ab;
-    font-size: 30px;
-    opacity: 80%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+
+ p {
+
+  margin-top: 3%;
+
  }
- .aluno{
+ .enviar-nota{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2vh;
+  width: 100%;
+  background-color:  #583499;
+  color: white;
+  height: 7vh;
+  border: 0;
+  border-radius: 10px;
+  padding: 25px;
+  font-size: 17px;
+  
+
+}
+.div-enviar-nota{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.mencao-noa{
   display: flex;
   flex-direction: row;
-  gap: 1%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
 }
-.aluno-0{
-  font-weight: medium;
-  font-size: 17px;
-
+.metade {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.aluno-1{
- color: #000000;
- opacity: 56%;
- font-size: 17px;
+input[readonly] {
+  background-color: #EDEDED;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  color: #6a27ab;
+  width: 100%;
+  padding: 10px;
 }
- .turmas-box {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 75%;
-  height: 80vh;
-  margin: bottom 20%; 
-  text-align: center; /* Centraliza os campos de entrada */
-}
-   .div-img{
-      width: 65%;
-      display: flex;
-      justify-content: flex-end;
-      position: absolute;
-      z-index: 1;
-      margin-bottom: 10%;
-      top: -9%;
-    }
-    .baner{
-      width: 25%;
-      height: 25%;}
 
-      .linhas-av{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 5%;
-        margin-left: 3vw;
-     
-      }
-      .av1{
-        background-color: #EDEDED;
-        width: 15%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 8vh;
-        margin-top: 2%;
-      }
+ @media screen and (max-width: 430px){
+          h1 {
+          margin-bottom: 30px;
+          color: #6927ab;
+          font-size: 30px;
+          opacity: 80%;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          }
+          .aluno{
+          display: flex;
+          flex-direction: row;
+          gap: 1%;
+          }
+          .aluno-0{
+          font-weight: medium;
+          font-size: 17px;
 
-      .dar-nota{
-        background-color: #EDEDED;
-        border-radius: 3px;
-        border: none;
-        text-align: center;
-        color: white;
-        width: 100%;
-        height: 8vh;
-        color: #6a27ab;
-        font-weight: 600;
-        
-     
-      }
+          }
+          .aluno-1{
+          color: #000000;
+          opacity: 56%;
+          font-size: 17px;
+          }
+          .turmas-box {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 25px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          width: 75%;
+          height: 80vh;
+          margin: bottom 20%; 
+          text-align: center;
+          }
+          .div-img{
+          width: 65%;
+          display: flex;
+          justify-content: flex-end;
+          position: absolute;
+          z-index: 1;
+          margin-bottom: 10%;
+          top: -9%;
+          }
+          .baner{
+          width: 25%;
+          height: 25%;
+          margin-top: 50px;
 
-      .div-select-dar-nota{
-        width: 20%;
-     
-     }
+          }
 
-      
+          .linhas-av{
+          display: flex;
+          width: 100%;
+          margin-top: 5%;
+          margin-left: 3vw;
+
+
+          }
+          .av1{
+          background-color: #EDEDED;
+          width: 15%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 8vh;
+          margin-top: 2%;
+          }
+
+          .dar-nota{
+          background-color: #EDEDED;
+          border-radius: 3px;
+          border: none;
+          text-align: center;
+          color: white;
+          width: 100%;
+          height: 8vh;
+          color: #6a27ab;
+          font-weight: 600;
+          margin-top: 10% ;
+
+          }
+
+          .div-select-dar-nota{
+          width: 20%;
+
+          }
+          p {
+
+            margin-top: 10%;
+          
+           }
+          
 
  }
